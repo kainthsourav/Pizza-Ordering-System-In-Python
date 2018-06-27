@@ -1,0 +1,25 @@
+
+from Tkinter import *
+top=Tk()
+top.title("Round Pizza Table : The Last Honest Pizza")
+canvas=Canvas(width=530,height=150,bg='white')
+canvas.pack(expand=YES,fill=BOTH)
+gif1=PhotoImage(file='C:\Users\Sourav\Desktop\Project Python\q.gif')
+canvas.create_image(50,10,image=gif1,anchor=NW)
+frame=Frame(top)
+frame.pack(anchor=CENTER,pady=20)
+L1=Label(frame, text="Name")
+L1.pack(pady=5)
+E1=Entry(frame,bd=5)
+E1.pack()
+
+L2=Label(frame, text="Order ID")
+L2.pack(pady=5)
+E2=Entry(frame,bd=5)
+E2.pack()
+
+rb=Button(frame,text="Cancel Now",fg="black")
+rb.pack(side=LEFT,pady=5)
+top.geometry("530x450")
+top.resizable(width=False, height=False)
+top.mainloop()
